@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about MIYAR LTD and our dedicated team of fashion professionals. Established in 2024, we are passionate about bringing quality clothing to Tilbury and beyond.">
+    <meta name="keywords" content="about MIYAR, team, fashion professionals, Tilbury clothing store">
+    <link rel="canonical" href="http://miyar.uk/about.html">
+    <title>About Us - MIYAR LTD: Retailers of High Quality Clothing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #d4af37;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-text {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .avatar-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .avatar-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .avatar-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .avatar-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .avatar-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .avatar-6 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .team-member .role {
+            color: #d4af37;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .team-member p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Values Section */
+        .values-section {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: #d4af37;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">MIYAR</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About MIYAR LTD</h1>
+            <p>Dedicated to bringing you the finest quality clothing since 2024</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <p class="section-text">
+                Founded in June 2024, MIYAR LTD has quickly established itself as a trusted retailer of high-quality clothing
+                in Tilbury, Essex. We are passionate about fashion and committed to providing our customers with exceptional
+                products and outstanding service. Our carefully curated collections feature the latest trends and timeless classics,
+                ensuring there's something for everyone.
+            </p>
+            <p class="section-text">
+                Located at 15 Shelley Place in Tilbury, our physical store offers a personalised shopping experience where our
+                knowledgeable team is always ready to help you find the perfect outfit. We pride ourselves on our attention to
+                detail, quality craftsmanship, and customer satisfaction.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="content-section" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar avatar-1">SA</div>
+                    <h3>Sarah Anderson</h3>
+                    <p class="role">Managing Director</p>
+                    <p>With over 15 years in retail fashion, Sarah leads MIYAR with vision and passion for quality clothing.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar avatar-2">JC</div>
+                    <h3>James Chen</h3>
+                    <p class="role">Head of Operations</p>
+                    <p>James ensures our operations run smoothly, from inventory management to customer satisfaction.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar avatar-3">EP</div>
+                    <h3>Emily Patel</h3>
+                    <p class="role">Fashion Buyer</p>
+                    <p>Emily curates our collections, staying ahead of trends while maintaining our commitment to quality.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar avatar-4">MT</div>
+                    <h3>Marcus Thompson</h3>
+                    <p class="role">Store Manager</p>
+                    <p>Marcus and his team provide exceptional in-store service, ensuring every customer leaves satisfied.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar avatar-5">LR</div>
+                    <h3>Lisa Roberts</h3>
+                    <p class="role">Customer Service Lead</p>
+                    <p>Lisa heads our customer service team, dedicated to providing the best shopping experience possible.</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar avatar-6">DW</div>
+                    <h3>David Wilson</h3>
+                    <p class="role">E-Commerce Manager</p>
+                    <p>David oversees our online presence, bringing the MIYAR experience to customers everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Quality First</h3>
+                    <p>We believe in offering only the finest quality clothing. Every item in our collection is carefully selected
+                    to meet our high standards of craftsmanship and durability.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Customer Focus</h3>
+                    <p>Our customers are at the heart of everything we do. We strive to provide exceptional service and a shopping
+                    experience that exceeds expectations.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Style & Elegance</h3>
+                    <p>Fashion is about expressing yourself. We offer diverse collections that cater to different styles and
+                    preferences, helping you look and feel your best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About MIYAR LTD</h3>
+                    <p>Retailers of high quality clothing, established 2024. Specialising in fashionable men's and women's apparel.</p>
+                    <p><strong>Company No:</strong> 15805939</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>15 Shelley Place<br>
+                    Tilbury, Essex<br>
+                    RM18 8HP, United Kingdom</p>
+                    <p><strong>Phone:</strong> 07880 022561</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday: 10:00 - 18:00</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MIYAR LTD. All rights reserved. Registered in England and Wales.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
