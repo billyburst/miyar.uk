@@ -7,6 +7,7 @@
     <meta name="keywords" content="contact MIYAR, Tilbury clothing store, contact details, MIYAR phone number">
     <link rel="canonical" href="http://miyar.uk/contact.html">
     <title>Contact Us - MIYAR LTD: Retailers of High Quality Clothing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,26 +16,29 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #2c2c2c;
             background-color: #fff;
+            overflow-x: hidden;
         }
 
         /* Navigation */
         nav {
-            background-color: #1a1a1a;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         nav .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,85 +46,115 @@
 
         nav .logo {
             color: #fff;
-            font-size: 1.8rem;
-            font-weight: bold;
+            font-size: 2rem;
+            font-weight: 700;
             text-decoration: none;
-            letter-spacing: 2px;
+            letter-spacing: 6px;
+            font-family: 'Playfair Display', serif;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 3rem;
         }
 
         nav ul li a {
-            color: #fff;
+            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-weight: 300;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after,
+        nav ul li a.active::after {
+            width: 100%;
         }
 
         nav ul li a:hover,
         nav ul li a.active {
-            color: #d4af37;
+            color: #fff;
         }
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 40px;
         }
 
         /* Page Header */
         .page-header {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+                        url('https://i2-prod.glasgowlive.co.uk/incoming/article28412511.ece/ALTERNATES/s615/0_image001-2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #fff;
-            padding: 80px 0;
+            padding: 180px 0 100px;
             text-align: center;
+            margin-top: 0;
         }
 
         .page-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 6px;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
         }
 
         .page-header p {
             font-size: 1.2rem;
+            letter-spacing: 3px;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
         }
 
         /* Contact Section */
         .contact-section {
-            padding: 60px 0;
+            padding: 100px 0;
         }
 
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            margin-top: 40px;
+            gap: 80px;
+            margin-top: 60px;
         }
 
         .contact-info {
-            background: #f9f9f9;
-            padding: 40px;
-            border-radius: 10px;
+            background: #f8f8f8;
+            padding: 60px 50px;
         }
 
         .contact-info h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
             color: #1a1a1a;
+            letter-spacing: 2px;
         }
 
         .info-item {
-            margin-bottom: 30px;
-            padding-left: 40px;
+            margin-bottom: 40px;
+            padding-left: 50px;
             position: relative;
         }
 
@@ -129,74 +163,84 @@
             position: absolute;
             left: 0;
             top: 5px;
-            width: 30px;
-            height: 30px;
-            background-color: #d4af37;
+            width: 35px;
+            height: 35px;
+            background-color: #000;
             border-radius: 50%;
         }
 
         .info-item h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
             color: #1a1a1a;
+            letter-spacing: 1px;
         }
 
         .info-item p {
             color: #666;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 0.95rem;
         }
 
         .info-item a {
-            color: #4facfe;
+            color: #000;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
 
         .info-item a:hover {
-            text-decoration: underline;
+            padding-left: 5px;
         }
 
         /* Contact Form */
         .contact-form {
             background: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 60px 50px;
+            border: 1px solid #e8e8e8;
         }
 
         .contact-form h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
             color: #1a1a1a;
+            letter-spacing: 2px;
         }
 
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #333;
-            font-weight: 600;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
         }
 
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
+            padding: 15px;
+            border: 1px solid #e8e8e8;
+            border-radius: 0;
             font-size: 1rem;
             font-family: inherit;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
+            background: #fafafa;
         }
 
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: #4facfe;
+            border-color: #000;
+            background: #fff;
         }
 
         .form-group textarea {
@@ -209,85 +253,108 @@
         }
 
         .submit-btn {
-            background-color: #d4af37;
-            color: #1a1a1a;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            padding: 18px 50px;
+            border: 2px solid #000;
+            border-radius: 0;
+            font-size: 0.9rem;
+            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.4s ease;
             width: 100%;
         }
 
         .submit-btn:hover {
-            background-color: #b8941f;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background-color: transparent;
+            color: #000;
         }
 
         /* Map Section */
         .map-section {
-            background-color: #f5f5f5;
-            padding: 60px 0;
+            background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+            padding: 100px 0;
         }
 
         .map-section h2 {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
             color: #1a1a1a;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .map-section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: #000;
+            margin: 30px auto 0;
         }
 
         .map-placeholder {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 400px;
-            border-radius: 10px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://i2-prod.glasgowlive.co.uk/incoming/article28412511.ece/ALTERNATES/s615/0_image001-2.png');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-align: center;
-            padding: 20px;
+            padding: 40px;
+        }
+
+        .map-placeholder div {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
         }
 
         /* Footer */
         footer {
-            background-color: #1a1a1a;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
             color: #fff;
-            padding: 40px 0 20px;
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
+            gap: 60px;
+            margin-bottom: 50px;
         }
 
         .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #d4af37;
-            font-size: 1.2rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
         }
 
         .footer-section p,
         .footer-section a {
-            color: #ccc;
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             display: block;
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
+            margin-bottom: 0.8rem;
+            line-height: 1.9;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
         }
 
         .footer-section a:hover {
-            color: #d4af37;
+            color: #fff;
+            padding-left: 5px;
         }
 
         .footer-links {
@@ -295,14 +362,16 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            color: #999;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
 
         /* Responsive */
@@ -310,21 +379,62 @@
             nav .container {
                 flex-direction: column;
                 gap: 1rem;
+                padding: 0 20px;
             }
 
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 1rem;
+                gap: 1.5rem;
+            }
+
+            nav ul li a {
+                font-size: 0.8rem;
+            }
+
+            .page-header {
+                background-attachment: scroll;
+                padding: 140px 0 80px;
             }
 
             .page-header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
+                letter-spacing: 4px;
             }
 
             .contact-wrapper {
                 grid-template-columns: 1fr;
                 gap: 40px;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 40px 30px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .contact-section,
+            .map-section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav .logo {
+                font-size: 1.5rem;
+                letter-spacing: 4px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+                letter-spacing: 3px;
+            }
+
+            .map-section h2 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -447,8 +557,8 @@
             <h2>Find Us</h2>
             <div class="map-placeholder">
                 <div>
-                    📍 15 Shelley Place, Tilbury, Essex, RM18 8HP<br>
-                    <small>(Map integration available)</small>
+                    15 Shelley Place, Tilbury, Essex, RM18 8HP<br>
+                    <small style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; letter-spacing: 1px;">(Map integration available)</small>
                 </div>
             </div>
         </div>
